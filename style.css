@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.root {
+    margin: 40px 150px;
+    font-size: 15px;
+}
+
+.root .topbar {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.topbar .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.root .topbar .wrapper .left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .close {
+    display: none;
+}
+
+.menu ul {
+    display: flex;
+    gap: 40px;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+}
+
+.menu ul li a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.right .hamburger {
+    display: none;
+}
+
+.right .hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: hsl(240, 100%, 5%);
+}
+
+/* main */
+.main {
+    display: flex;
+}
+
+.left-content {
+    flex: 0.7;
+}
+
+.left-content img {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+.left-content .mobile {
+    display: none;
+}
+
+.left-content .content {
+    display: flex;
+}
+
+.content h1 {
+    flex: 0.4;
+    font-size: 45px;
+    font-weight: 800;
+    margin-right: 40px;
+    color: hsl(240, 100%, 5%);
+}
+
+.content .info {
+    flex: 0.6;
+}
+
+.info p {
+    line-height: 22px;
+    margin-bottom: 40px;
+    color: hsl(236, 13%, 42%);
+}
+
+.info button {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 10px 20px;
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    border: none;
+    cursor: pointer;
+}
+
+.info button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+.main .right-content {
+    flex: 0.3;
+    height: 60vh;
+    margin-left: 30px;
+    padding: 25px 20px;
+    background-color: hsl(240, 100%, 5%);
+}
+
+.right-content h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 30px;
+}
+
+.item {
+    padding: 20px 0;
+    border-bottom: 1px solid hsla(36, 100%, 99%, 0.164);
+}
+
+.item:last-child {
+    border: none;
+}
+
+.item a {
+    text-decoration: none;
+    color: hsl(36, 100%, 99%);
+}
+
+.item a:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.item p {
+    font-size: 12px;
+    padding: 10px 0;
+    color: hsla(36, 100%, 99%, 0.555);
+}
+
+.trending {
+    display: flex;
+    width: 100%;
+    height: 120px;
+}
+
+.trending-items {
+    width: 33.3%;
+    display: flex;
+}
+
+.trending-items img {
+    height: 100%;
+}
+
+.trending-items .info {
+    padding: 0 20px;
+}
+
+.trending-items .info h3 {
+    font-size: 20px;
+    color: rgba(128, 128, 128, 0.61);
+}
+
+.trending-items .info a {
+    text-decoration: none;
+}
+
+.trending-items .info a h4 {
+    font-weight: 800;
+    color: hsl(240, 100%, 5%);
+    padding: 10px 0;
+}
+
+.info a h4:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+
+
+@media screen and (max-width:1250px) {
+    .root {
+        margin: 30px 25px;
+        /* overflow-x: hidden; */
+    }
+
+    .topbar .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .wrapper .left {
+        flex: 0.1;
+    }
+
+    .wrapper .right {
+        flex: 0.1;
+        text-align: center;
+    }
+
+    .menu {
+        width: 300px;
+        height: 100vh;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 1s ease;
+    }
+
+    .menu .close {
+        display: block;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .menu ul li a {
+        font-size: 25px;
+        color: hsl(240, 100%, 5%);
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .not-active {
+        right: -300px;
+    }
+
+    .right .hamburger {
+        display: block;
+    }
+
+    .menu .close {
+        position: relative;
+        top: 30px;
+        right: -100px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-content .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-content .desktop {
+        display: none;
+    }
+
+    .left-content .mobile {
+        display: block;
+    }
+
+
+    .main .right-content {
+        margin: 40px 0;
+    }
+
+    .trending {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trending-items {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .trending-items .info a h4 {
+        padding: 8px 0;
+    }
+
+    .trending-items .info p {
+       line-height: 20px;
+    }
+
+}
