@@ -246,10 +246,6 @@
         right: 0;
     }
 
-    .not-active {
-        right: -300px;
-    }
-
     .right .hamburger {
         display: block;
     }
@@ -287,6 +283,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        margin-bottom: 400px;
     }
 
     .trending-items {
