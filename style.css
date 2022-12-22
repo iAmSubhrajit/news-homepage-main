@@ -291,13 +291,15 @@
         width: 100%;
         margin-bottom: 40px;
     }
-
+    .trending-items .info{
+        padding: 0 0 0 20px;
+    }
     .trending-items .info a h4 {
         padding: 8px 0;
     }
 
-    .trending-items .info p {
+    /* .trending-items .info p {
        line-height: 20px;
-    }
+    } */
 
 }
