@@ -224,11 +224,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        transition: all 1s ease;
-    }
-
-    .menu .close {
-        display: block;
+        transition: all 0.5s ease;
     }
 
     .menu ul {
@@ -248,12 +244,22 @@
 
     .right .hamburger {
         display: block;
+        padding: 5px;
+        cursor: pointer;
     }
 
     .menu .close {
+        display: block;
         position: relative;
         top: 30px;
         right: -100px;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .right .hamburger:hover,
+    .menu .close:hover {
+        background-color: hsl(35, 77%, 62%);
     }
 
     .main {
@@ -291,9 +297,11 @@
         width: 100%;
         margin-bottom: 40px;
     }
-    .trending-items .info{
+
+    .trending-items .info {
         padding: 0 0 0 20px;
     }
+
     .trending-items .info a h4 {
         padding: 8px 0;
     }
